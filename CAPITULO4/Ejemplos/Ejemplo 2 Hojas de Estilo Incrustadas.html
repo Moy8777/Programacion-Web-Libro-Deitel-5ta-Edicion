@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<!-- Fig. 4.3: incrustada.html -->
+<!-- Hojas de estilo incrustadas. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Hoja de Estilos Incrustada</title>
+
+      <!-- aquí comienza la sección de la hoja de estilos -->
+      <style type = "text/css">
+         em       { font-weight: bold;
+                    color: black; }   
+         h1       { font-family: tahoma, helvetica, sans-serif; }
+         p        { font-size: 12pt;
+                    font-family: arial, sans-serif; }
+         .special { color: purple; }
+      </style>
+   </head>
+   <body>
+      <!-- este atributo aplica la clase de estilo .special -->
+      <h1 class = "special">Deitel & Associates, Inc.</h1>
+
+      <p>Deitel & Associates, Inc. es una organizaci&oacute;n de redacci&oacute;n y 
+         capacitaci&oacute;n corporativa especializada en lenguajes de programaci&oacute;n, 
+         tecnolog&iacute;a de Internet y web, desarrollo de aplicaciones para iPhone 
+         y Android, y educaci&oacute;n en tecnolog&iacute;a orientada a objetos.</p>
+
+      <h1>Clientes</h1>
+      <p class = "special"> Entre los clientes de la empresa se incluyen muchas 
+         <em>compa&ntilde;ias Fortune 1000</em>, agencias gubernamentales, 
+         ramas de las fuerzas armadas y organizaciones empresariales.</p>
+   </body>
+</html>

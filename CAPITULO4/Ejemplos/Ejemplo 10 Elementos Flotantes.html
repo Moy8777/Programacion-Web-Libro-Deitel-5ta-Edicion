@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!-- Fig. 4.15: flotante.html -->
+<!-- Elementos flotantes. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Flujo de Texto Alrededor de Elementos Flotantes</title>
+      <style type = "text/css">
+         header   { background-color: SkyBlue;
+                    text-align: center;
+                    font-family: arial, helvetica, sans-serif;
+                    padding: .2em; }
+         p        { text-align: justify;
+                    font-family: verdana, geneva, sans-serif;
+                    margin: .5em; }
+         h1       { margin-top: 0px; }    
+         .floated { background-color: LightGrey;
+                    font-size: 1.5em;
+                    font-family: arial, helvetica, sans-serif;
+                    padding: .2em;
+                    margin-left: .5em;
+                    margin-bottom: .5em;
+                    float: right;
+                    text-align: right;
+                    width: 50%; }
+         section { border: 1px solid skyBlue; }
+      </style>
+   </head>
+   <body>
+      <header><img src = "../Imagenes/deitel.png" alt = "Deitel" /></header>
+      <section>
+         <h1 class = "floated">Capacitaci&oacute;n Corporativa y Creaci&oacute;n de Contenido</h1>
+         <p>Deitel & Associates, Inc. es una organizaci&oacute;n de capacitaci&oacute;n
+         corporativa y redacci&oacute;n reconocida internacionalmente,
+         especializada en lenguajes de programaci&oacute;n, tecnolog&iacute;a de
+         Internet/web, desarrollo de aplicaciones para iPhone y Android y
+         educaci&oacute;n en tecnolog&iacute;a orientada a objetos. La empresa imparte cursos
+         sobre Java, C++, C#, Visual Basic, C, programaci&oacute;n para Internet y la web,
+         tecnolog&iacute;a orientada a objetos y desarrollo de aplicaciones para iPhone y Android.</p>
+      </section>
+      <section>
+         <h1 class = "floated">Libros y Videos de Programaci&oacute;n</h1>
+         <p>A trav&eacute;s de su asociaci&oacute;n editorial
+         con Pearson, Deitel & Associates,
+         Inc. publica libros de texto de programaci&oacute;n de vanguardia,
+         libros profesionales y cursos de video LiveLessons interactivos en la web y en DVD.</p>
+      </section>
+   </body>
+</html>

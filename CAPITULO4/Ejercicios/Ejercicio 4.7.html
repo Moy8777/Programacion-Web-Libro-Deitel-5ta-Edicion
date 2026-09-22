@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4.7 - Plantilla con Float</title>
+    <style>
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .columna {
+            float: left;
+            width: 48%;
+            margin-right: 2%;
+            background-color: #f2f2f2;
+            border: 2px solid #007bc4;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        /* Limpieza de flotados (clearfix) para mantener el contenedor en su lugar */
+        .contenedor::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Encabezado Principal (Header)</h1>
+    </header>
+
+    <div class="contenedor">
+        <p class="columna">
+            <strong>Columna 1:</strong> Este es el primer párrafo alineado a la izquierda usando la propiedad <code>float: left</code>. Cuenta con borde azul y fondo gris claro.
+        </p>
+        <p class="columna">
+            <strong>Columna 2:</strong> Este es el segundo párrafo ubicado al lado del primero. También utiliza la clase de columna para comportarse como una disposición multicolumna.
+        </p>
+    </div>
+
+</body>
+</html>
