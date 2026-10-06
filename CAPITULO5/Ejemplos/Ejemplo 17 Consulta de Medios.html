@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.18: consultasmedios.html -->
+<!-- Uso de consulta de medios para volver a dar formato a una pagina con base 
+ en la anchura del dispositivo -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Consultas de Medios</title>
+      <style type = "text/css">
+      p
+      { margin: 0.9em 0em; }
+      /* estilos para teléfonos inteligentes con anchos de pantalla de 480px o más pequeños */
+      @media handheld and (max-width: 480px), 
+         screen and (max-device-width: 480px), 
+         screen and (max-width: 480px) 
+      {
+         div {
+            -webkit-column-count: 1; 
+            column-count: 1; }
+      }
+      /* estilos para dispositivos con anchos de pantalla de 481px a 1024px */
+      @media only screen and (min-width: 481px) and 
+         (max-width: 1024px)
+      {
+         div {
+            -webkit-column-count: 2; 
+            column-count: 2;
+            -webkit-column-gap: 30px; 
+            column-gap: 30px;
+            -webkit-column-rule: 1px outset black; 
+            column-rule: 1px outset black; }
+      }
+      /* estilos para dispositivos con anchos de pantalla de 1025px o mayores */
+      @media only screen and (min-width: 1025px)
+      {
+         div {
+            -webkit-column-count: 3; 
+            column-count: 3;
+            -webkit-column-gap: 30px; 
+            column-gap: 30px;
+            -webkit-column-rule: 1px outset black; 
+            column-rule: 1px outset black; }
+      }
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>Computadoras, hardware y software</h1>
+      </header>
+      <div class = "multicolumna">
+         <p>Una computadora es un dispositivo que puede realizar c&aacute;lculos y tomar 
+            decisiones l&oacute;gicas con mucha m&aacute;s rapidez que los humanos. 
+            Muchas de las computadoras personales de la actualidad pueden realizar miles 
+            de millones de 
+            c&aacute;lculos en un segundo&mdash;m&aacute;s de lo que un humano puede realizar 
+            durante toda su vida. Las supercomputadoras ya se encuentran realizando miles 
+            de billones (trillones) de instrucciones por segundo. Para poner 
+            esto en perspectiva, una computadora de un trill&oacute;n de instrucciones por segundo 
+            puede realizar en un segundo m&aacute;s de 100,000 
+            c&aacute;lculos para cada persona en el planeta. Y&mdash;estos 
+            "l&iacute;mites superiores" aumentan con rapidez.</p>
+         <p>Las computadoras procesan datos bajo el control de conjuntos de 
+            instrucciones llamadas programas de computadora. Estos programas gu&iacute;an 
+            a la computadora por conjuntos ordenados de acciones especificadas por 
+            personas llamadas programadores de computadora. Los programas que se ejecutan en una 
+            computadora se conocen como software. En este libro usted 
+            aprender&aacute; sobre la metodolog&iacute;a de programaci&oacute;n clave de 
+            la actualidad que 
+            mejora la productividad del programador, con lo cual se reducen los costos de 
+            desarrollo de 
+            software&mdash;programaci&oacute;n orientada a objetos.</p>
+         <p>Una computadora consiste de diversos dispositivos conocidos como hardware 
+            (por ejemplo: el teclado, pantalla, rat&oacute;n, discos duros, memoriaAquí tienes la adaptación del código HTML que utiliza *Media Queries* en CSS3, traduciendo la estructura, los comentarios del código y los encabezados. 
+
+Para el contenido del cuerpo, en lugar de copiar el texto literal del libro, he redactado un resumen equivalente sobre la introducción a las computadoras, el hardware y el software:
+
+```html
+<!DOCTYPE html>
+
+<!-- Fig. 5.18: consultas_medios.html -->
+<!-- Consultas de medios (Media Queries) en CSS3. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Consultas de Medios</title>
+      <style type = "text/css">
+         p
+         { margin: 0.9em 0em; }
+         
+         /* Estilos para smartphones con pantallas de 480px o menos */
+         @media handheld and (max-width: 480px), 
+            screen and (max-device-width: 480px), 
+            screen and (max-width: 480px) 
+         {
+            div {
+               -webkit-column-count: 1; 
+               column-count: 1; }
+         }
+         
+         /* Estilos para dispositivos con pantallas de 481px a 1024px */
+         @media only screen and (min-width: 481px) and 
+            (max-width: 1024px)
+         {
+            div {
+               -webkit-column-count: 2; 
+               column-count: 2;
+               -webkit-column-gap: 30px; 
+               column-gap: 30px;
+               -webkit-column-rule: 1px outset black; 
+               column-rule: 1px outset black; }
+         }
+         
+         /* Estilos para dispositivos con pantallas de 1025px o más */
+         @media only screen and (min-width: 1025px)
+         {
+            div {
+               -webkit-column-count: 3; 
+               column-count: 3;
+               -webkit-column-gap: 30px; 
+               column-gap: 30px;
+               -webkit-column-rule: 1px outset black; 
+               column-rule: 1px outset black; }
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>Computadoras, Hardware y Software</h1>
+      </header>
+      <div>
+         <p>Una computadora es un dispositivo electr&oacute;nico capaz de procesar 
+            datos y realizar operaciones l&oacute;gicas y matem&aacute;ticas a gran velocidad. 
+            Los equipos modernos pueden ejecutar miles de millones de instrucciones por 
+            segundo, superando por mucho la capacidad de c&aacute;lculo humana y 
+            permitiendo el avance de la tecnolog&iacute;a actual.</p>
+         
+         <p>Los programas de computadora, conocidos colectivamente como software, 
+            dirigen las acciones del equipo mediante instrucciones ordenadas creadas por 
+            los programadores. La programaci&oacute;n orientada a objetos es una de las 
+            metodolog&iacute;as principales para optimizar el desarrollo de estos programas.</p>
+         
+         <p>El hardware abarca los componentes f&iacute;sicos del sistema, como el teclado, 
+            la pantalla, la memoria y las unidades de procesamiento. Gracias a los avances 
+            en la microelectr&oacute;nica y los chips de silicio, los costos de fabricaci&oacute;n 
+            han disminuido significativamente, masificando el acceso a la computaci&oacute;n.</p>
+         
+         <p>Adem&aacute;s de las computadoras de uso general, los microprocesadores se 
+            encuentran integrados en multitud de dispositivos cotidianos, tales como 
+            sistemas automotrices, electrodom&eacute;sticos, tel&eacute;fonos m&oacute;viles 
+            y equipos de automatizaci&oacute;n.</p>
+            
+         <footer>
+            <em>&copy; Todos los derechos reservados.</em>
+         </footer>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.13: Inclinacion.html -->
+<!-- Elementos de Inclinacion y de transformacion en CSS3. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Inclinar</title>
+      <style type = "text/css">
+         .skew .textbox 
+         {
+            margin-left: 75px;
+            background: lightgreen;
+            height: 100px;
+            width: 200px;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 250%;
+            border: 3px solid DarkGreen;
+            border-radius: 15px;
+            animation: skew 3s infinite linear;
+         }
+         @keyframes skew 
+         {
+            from { transform: skewX(0deg); }
+            25%  { transform: skewX(45deg); }
+            50%  { transform: skewX(0); }
+            75%  { transform: skewX(-45deg); }
+            to   { transform: skewX(0); }
+         }
+      </style>
+   </head>
+   <body>
+      <div class = "box skew">
+         <div class = "textbox">Inclinar Texto</div>
+      </div>
+   </body>
+</html>

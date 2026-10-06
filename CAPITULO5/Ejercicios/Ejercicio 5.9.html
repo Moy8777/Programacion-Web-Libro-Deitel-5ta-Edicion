@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5.9</title>
+    <style>
+        .caja-movil {
+            width: 50px;
+            height: 50px;
+            background-color: crimson;
+            position: relative;
+            animation: moverCuadrado 4s infinite;
+        }
+
+        @keyframes moverCuadrado {
+            0%   { top: 0px; left: 0px; }
+            25%  { top: 0px; left: 150px; }
+            50%  { top: 150px; left: 150px; }
+            75%  { top: 150px; left: 0px; }
+            100% { top: 0px; left: 0px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caja-movil"></div>
+
+</body>
+</html>
